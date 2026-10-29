@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #EDF6F9;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    /* border: red dotted 1px; */
+}
+
+.navbar-toggle ul li a{
+    text-decoration: none;
+    font-family: "Alegreya Sans", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    color: #083934;
+}
+
+.navbar-toggle ul li{
+    list-style: none;
+}
+
+.navbar-toggle ul{
+    display: flex;
+    gap: 30px;
+}
+
+.senthuran h2{
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #083934;
+}
+
+.cv-btn input{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 17px;
+    background-color: #083934;
+    font-weight: 500;
+}
