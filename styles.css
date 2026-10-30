@@ -52,3 +52,213 @@ header{
     background-color: #083934;
     font-weight: 500;
 }
+
+.home{
+    width: 100vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: red dotted 1px; */
+}
+
+.home-main{
+    display: flex;
+    height:calc(100dvh - 128px);
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+}
+
+.first-line{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.first-line .word{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    
+}
+
+.first-line .word p{
+    font-family: "Kaushan Script", cursive;
+    font-size: 50px;
+    transition: color 0.1s ease;
+    color: #E60000;
+    
+}
+
+.first-line .word p:hover{
+    color: green;
+}
+
+.second-line{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.second-line .word{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.second-line .word p{
+    font-family: "Kaushan Script", cursive;
+    font-size: 35px;
+    transition: color 0.1s ease;
+    color: #006D77;
+}
+
+.second-line .word p:hover{
+    color: red;
+}
+
+.img img{
+    width: 350px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.typing-container p {
+    font-family: "Labrada", serif;
+    font-size: 18px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #226F54;
+}
+
+.line1 {
+    border-right: 2px solid red;
+    animation: typing1 3s steps(41) forwards;
+    
+}
+
+.line2 {
+    border-right: 2px solid transparent;
+    animation: typing2 3s steps(38) 3s forwards, blink 0.75s ease 6s infinite;
+}
+
+.skills-bar{
+    background-color: #006D77;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
+.skill-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    box-sizing: border-box;
+    animation: scroll 20s linear infinite;
+}
+
+.skill-box{
+    height: 32px;
+    background-color: #EDF6F9;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFCF2;
+    flex-shrink: 0;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icon{
+    font-size: 20px;
+    color: #E60000;
+}
+
+.skill p{
+    padding-top: 4px;
+    font-family: "Marhey", sans-serif;
+    color: #E60000;
+}
+
+
+
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes typing1 {
+    from { width: 0; }
+    to { width: 41ch; }
+    0%,99%{
+        border-color: red;
+    }
+
+    100%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing2 {
+    from { width: 0; }
+    to { width: 38ch; }
+
+    0%{
+        border-color: transparent;
+    }
+
+    1%,100%{
+        border-color: red;
+    }
+}
+
+@keyframes blink {
+    0%{
+        border-color: transparent;
+    }
+
+    100%{
+        border-color: red;
+    }
+}
+
