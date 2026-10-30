@@ -69,7 +69,7 @@ header{
 
 .home{
     width: 100vw;
-    padding-top: 80px;
+    padding-top:65px;
 }
 
 .home-main{
@@ -238,7 +238,7 @@ header{
     padding-top: 20px;
     padding-bottom: 40px;
     border-radius: 25px;
-    animation: float 4s ease-in-out infinite;
+    /* animation: float 4s ease-in-out infinite; */
 }
 
 .about-me .simple-topic{
@@ -258,9 +258,111 @@ header{
     text-shadow: 0 0 10px #fb6f92;
 }
 
+.projects .topic .normal{
+    font-family: "Kay Pho Du", serif;
+}
 
+.projects .topic .main{
+    font-family: "Kaushan Script", cursive;
+    font-size: 40px;
+    color: #007F5F;
+}
 
+.projects{
+    padding: 50px;
+    padding-top: 105px;
+}
 
+.project-grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project-grid .item{
+    height: auto;
+}
+
+.project-grid .item .img-container{
+    height: 35vh;
+    border-radius: 15px;
+    border: #C1121F solid 3px;
+    overflow: hidden;
+}
+
+.project-grid .item img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-grid .item:hover img{
+    transform: scale(1.1);
+}
+
+.project-grid .item .topic{
+    font-family: "Labrada", serif;
+    color: #C1121F;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.project-grid .item .tools .tool{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-grid .item .tools{
+    height: 10vh;
+}
+
+.project-grid .item .tools .tool p{
+    height: 25px;
+    width: auto;
+    background-color: #FFCAD4;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Labrada", serif;
+    color: #C1121F;
+    border-radius: 5px;
+}
+
+.project-grid .item .links{
+    margin-top: 10px;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-grid .item .links .link a{
+    display: flex;
+    background-color: #eddcd2;
+    height: 25px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+.project-grid .item .links .link:hover a{
+    background-color: #f9dcc4;
+    cursor: pointer;
+}
+
+.project-grid .item .links .link p{
+    font-family: "Labrada", serif;
+}
 
 @keyframes scroll{
     from{
@@ -271,8 +373,6 @@ header{
         transform: translateX(-50%);
     }
 }
-
-
 
 @keyframes float{
     0%, 100%{
