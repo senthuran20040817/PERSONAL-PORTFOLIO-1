@@ -5,14 +5,28 @@
 
 body{
     background-color: #EDF6F9;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    box-sizing: border-box;
+    background-color: #EDF6F9;
+    border-bottom: #083934 solid 0.5px;
     /* border: red dotted 1px; */
 }
 
@@ -55,10 +69,7 @@ header{
 
 .home{
     width: 100vw;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* border: red dotted 1px; */
+    padding-top: 80px;
 }
 
 .home-main{
@@ -201,6 +212,52 @@ header{
     font-family: "Marhey", sans-serif;
     color: #E60000;
 }
+
+.about-me{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.about-me .main{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.about-me .main .topic{
+    width: 50%;
+}
+
+.about-me .main .essay{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 60px;
+    /* background-color: #a3b18a; */
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 25px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.about-me .simple-topic{
+    font-family: "Kay Pho Du", serif;
+}
+
+.about-me .topic-phrase{
+    font-family: "Kaushan Script", cursive;
+    font-size: 40px;
+    color: #007F5F;
+}
+
+.about-me .main .essay p{
+    font-family: "Labrada", serif;
+    font-size: 20px;
+    color: #D7263D;
+    text-shadow: 0 0 10px #fb6f92;
+}
+
 
 
 
